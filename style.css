@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ddd;
+  min-height: 1800px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: #eee;
+  border-bottom: 2px solid #333;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.brand h1 {
+  font-size: 24px;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+#nav-bar ul li {
+  margin: 0 20px;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#nav-bar ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#features {
+  margin-top: 100px;
+}
+
+#features h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.features-icon {
+  margin-right: 40px;
+}
+
+.features-icon i {
+  color: darkorange;
+  font-size: 2em;
+}
+
+.features-desc h3 {
+  font-size: 16px;
+}
+
+.features-desc p {
+  font-size: 12px;
+}
+
+#products h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#products h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.product-video iframe {
+  border: 5px solid white;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+}
+
+.product-image a img {
+  width: 350px;
+  margin: 0 20px;
+  border: 5px solid white;
+}
+
+#pricing h2 {
+  margin: 20px 0;
+  font-size: 32px;
+}
+
+.area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 250px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.product-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-desc .product-name {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  color: antiquewhite;
+  background-color: #222;
+}
+
+.product-desc h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.product-desc p {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.product-desc button {
+  padding: 5px;
+  width: 100px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  background-color: #c9c90e;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.product-desc button:hover {
+  background-color: #999904;
+}
+
+#buy {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#buy h2 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+#buy form {
+  display: flex;
+  flex-direction: column;
+}
+
+#buy #email {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+#buy #submit {
+  margin: 0 auto;
+  padding: 7px;
+  font-family: inherit;
+  border: none;
+  border-radius: 2px;
+  background-color: #c9c90e;
+  transition: 0.3s;
+}
+
+#buy #submit:hover {
+  background-color: #999904;
+}
+
+@media only screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #features h2,
+  #products h2,
+  #pricing h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .product-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-video h3 {
+    display: none;
+  }
+
+  .product-video iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .product-image {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #products h3 {
+    display: none;
+  }
+
+  .area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .area .box {
+    margin-bottom: 20px;
+  }
+}
