@@ -218,6 +218,7 @@ header {
   margin: 0 auto;
   padding: 7px;
   font-family: inherit;
+  cursor: pointer;
   border: none;
   border-radius: 2px;
   background-color: #c9c90e;
